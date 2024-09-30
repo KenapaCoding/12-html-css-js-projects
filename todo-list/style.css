@@ -1,0 +1,129 @@
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.container{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 400px;
+}
+h1{
+    text-align: center;
+    color: #333;
+}
+#new-task{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+#add-task-btn{
+    background: #28a745;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#add-task-btn:hover{ 
+    background: #218838;
+}
+#todo-list{
+    list-style: none;
+    padding: 0;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+li span{
+   
+    flex: 1;
+    font-size: 16px;
+}
+.buttons{
+    display: flex;
+    gap: 5px;
+}
+button{
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px ;
+    font-weight: bold;
+}
+.edit-btn{
+    background: #007bff;
+    color: white;
+}
+.edit-btn:hover{
+    background: #0056b3;
+}
+.delete-btn{
+    background: #dc3545;
+    color: white;
+}
+.delete-btn:hover{
+    background: #c83333;
+}
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+
+}
+.modal-content{
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+.modal input{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+.modal button{
+    padding: 10px 15px;
+    margin: 5px;
+}
+.close-modal-btn{
+    background: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.save-modal-btn{
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}

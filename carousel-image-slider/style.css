@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Aria', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+header h1{
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header h2{
+    color: #666;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.carousel-slide{
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-slide img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.prev-btn, .next-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.prev-btn{
+    left: 10px;
+}
+
+.next-btn{
+    right: 10px;
+}
+
+.prev-btn:hover, .next-btn:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.indicator{
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.indicator.active{
+    background-color: rgba(255,255,255,0.9);
+}
+.indicator:hover{
+    background-color: rgba(255,255,255,0.7);
+}
+
+/* Responsive */
+
+@media (max-width: 768px){
+    .prev-btn, .next-btn {
+        font-size: 24px;
+        padding: 8px;
+    }
+    .indicator {
+        width: 10px;
+        height: 10px;
+    }
+}

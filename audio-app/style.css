@@ -1,0 +1,101 @@
+body{
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0f7fa;
+}
+
+.container{
+    display: flex;
+    background-color: #004d40;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.audio-player{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    border-right: 2px solid #ffeb3b;
+}
+.audio-controls {
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+.play-button {
+    background-color: #ffeb3b;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right : 10px;
+}
+
+.progress-container {
+    flex-grow: 1;
+    height: 10px;
+    background-color: #00796b;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+#progress-bar{
+    height: 100%;
+    background-color: #ffeb3b;
+    width: 0.5%;
+    min-width: 2px;
+    transition: width 0.1 ease;
+}
+
+#current-track {
+    margin-top: 10px;
+    color: #ffeb3b;
+}
+
+.audio-list{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.upload-label{
+    display: block;
+    background-color: #ffeb3b;
+    color: #00796b;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#audio-upload{
+    display: none;
+}
+
+#playlist{
+    height: 200px;
+    overflow-y: auto;
+    padding: 0;
+    margin: 0;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.5) transparent;
+}
+
+#playlist::-webkit-scrollbar{
+    width: 6px;
+}
+#playlist::-webkit-scrollbar-thumb{
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 10px; /* agar scollbar bulat */
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz App</h1>
+        <!-- Area untuk menampilkan pertanyaan -->
+         <div id="question-container" class="question-container">
+            <p id="question">Question text goes here</p>
+         </div>
+         <div id="answer-buttons" class="answer-buttons">
+            <!--Jawaban dynamic dari javascript-->
+         </div>
+
+         <button id="next-btn"  class="next-btn">
+            Next Question
+        </button>
+
+        <!--menampilkan skor-->
+        <div id="result-container" class="result-container" style="display: none;">
+            <p id="score">Your Score : 0 / 0</p>
+            <button id="restart-btn" class="restart-btn">
+                Restart Quiz
+            </button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

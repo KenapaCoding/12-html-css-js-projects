@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List App</h1>
+        <input type="text" placeholder="Add a new task" id="new-task">
+        <button id="add-task-btn" onclick="addTask()">Add</button>
+        <ul id="todo-list">
+            <!--semua todo akan muncul disini-->
+        </ul>
+    </div>
+    <div class="modal" id="editModal">
+        <div class="modal-content">
+            <h3>Edit Modal</h3>
+            <input type="text" id="edit-task-input">
+            <button class="save-modal-btn" onclick="saveTask()">Save</button>
+            <button onclick="closeModal()" class="close-modal-btn">Cancel</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

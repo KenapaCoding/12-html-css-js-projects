@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Audio Player with Playlist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="audio-player">
+            <div class="audio-controls">
+                <button id="play-pause" class="play-button">
+                    <!-- svg play icon -->
+                    <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#00796b" d="M8 5v14l11-7z"/>
+                    </svg>
+    
+                    <!-- svg pause icon -->
+                    <svg id="pause-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="display: none;">
+                        <path fill="#00796b" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                    </svg>
+                </button>
+                <div class="progress-container">
+                    <div id="progress-bar"></div>
+                </div>
+            </div>
+            <p id="current-track">No Track Selected</p>
+            <audio src="" id="audio"></audio>
+        </div>
+        
+        <div class="audio-list">
+            <label for="audio-upload" class="upload-label">
+                Import Audio
+            </label>
+            <input type="file" accept="audio/*" multiple id="audio-upload">
+            <ul id="playlist">
+                <!-- List audio akan diisi oleh javascript -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

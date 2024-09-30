@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Paint App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="paint-app">
+        <!-- Toolbar for painting tools -->
+         <div class="toolbar">
+            <button id="brush" class="tool active">
+                Brush
+            </button>
+            <button id="eraser" class="tool">
+                Eraser
+            </button>
+            <input type="color" value='#000000' id="colorPicker">
+            <button id="clear">
+                Clear
+            </button>
+         </div>
+         <!-- Canvas Area -->
+          <canvas id="canvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
