@@ -1,0 +1,120 @@
+/* Styling dasar untuk body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling untuk header, termasuk cart icon */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Styling untuk ikon cart */
+.cart-icon {
+    cursor: pointer;
+}
+
+/* Styling untuk bagian utama (main) */
+main {
+    padding: 20px;
+}
+
+/* Grid layout untuk daftar produk */
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Styling untuk setiap kartu produk */
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Menampilkan gambar produk dalam kartu produk */
+ img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Styling untuk tombol */
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+/* Hover effect untuk tombol */
+button:hover {
+    background-color: #555;
+}
+
+/* Styling untuk modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+/* Konten dalam modal */
+.modal-content {
+    background-color: white;
+    margin: 10% auto; 
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+
+/* Tombol close untuk modal */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Hover effect untuk tombol close */
+.close:hover {
+    color: red;
+}
+
+/* Styling untuk daftar item dalam cart */
+#cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling untuk total harga dalam cart */
+.total-price {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+}
